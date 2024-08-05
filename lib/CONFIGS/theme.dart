@@ -32,4 +32,9 @@ var lighttheme = ThemeData(
           color: onprimarycontainercolor),
     ));
 
-var darktheme = ThemeData(brightness: Brightness.dark);
+var darktheme = ThemeData(
+    brightness: Brightness.dark,
+    colorScheme: const ColorScheme.dark(
+        onSurface: darkonbackground,
+        primary: darkprimarycolor,
+        secondary: darksecondarycolor));
