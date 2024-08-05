@@ -1,5 +1,6 @@
 import 'package:e_commerce_mart/CONFIGS/theme.dart';
 import 'package:e_commerce_mart/VIEWS/authview.dart';
+import 'package:e_commerce_mart/VIEWS/homepageview.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +16,6 @@ class MyApp extends StatelessWidget {
         theme: lighttheme,
         debugShowCheckedModeBanner: false,
         title: 'COMMERCE MART',
-        home: const Authview());
+        home: const Homepageview());
   }
 }
