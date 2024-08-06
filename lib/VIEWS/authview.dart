@@ -1,4 +1,4 @@
-import 'package:e_commerce_mart/CONFIGS/RESPONSIVE/RESPONSIVELAYOUT.dart';
+import 'package:e_commerce_mart/CONFIGS/RESPONSIVE/responsive_layout.dart';
 import 'package:e_commerce_mart/PAGES/DESKTOP/auth/auth.dart';
 import 'package:e_commerce_mart/PAGES/MOBILE/auth/auth.dart';
 import 'package:e_commerce_mart/PAGES/WEB/auth/auth.dart';

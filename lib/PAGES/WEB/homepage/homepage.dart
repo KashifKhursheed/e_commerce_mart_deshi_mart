@@ -5,8 +5,20 @@ class Homepageweb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Text("homepage web"),
-    );
+    return Scaffold(
+        body: SafeArea(
+            child: Row(
+      children: [
+        Expanded(
+            child: Container(
+          color: Colors.amber,
+        )),
+        Expanded(
+            flex: 6,
+            child: Container(
+              color: Colors.black,
+            ))
+      ],
+    )));
   }
 }

@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 
 var lighttheme = ThemeData(
     brightness: Brightness.light,
-    colorScheme: ColorScheme.light(
+    colorScheme: const ColorScheme.light(
         surface: bgcolor,
         primary: primarycolor,
         onSurface: onbackgroundcolor,
         primaryContainer: primarycontainercolor,
         onPrimaryContainer: onprimarycontainercolor),
-    textTheme: TextTheme(
+    textTheme: const TextTheme(
       headlineMedium: TextStyle(
           fontFamily: 'poppins',
           fontSize: 25,
