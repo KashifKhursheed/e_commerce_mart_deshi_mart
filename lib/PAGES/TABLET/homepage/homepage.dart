@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Homepageweb extends StatelessWidget {
-  const Homepageweb({super.key});
+class Homepagetablet extends StatelessWidget {
+  const Homepagetablet({super.key});
 
   @override
   Widget build(BuildContext context) {

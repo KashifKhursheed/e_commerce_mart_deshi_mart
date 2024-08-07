@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AuthPageweb extends StatelessWidget {
-  const AuthPageweb({super.key});
+class AuthPagetablet extends StatelessWidget {
+  const AuthPagetablet({super.key});
 
   @override
   Widget build(BuildContext context) {

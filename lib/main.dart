@@ -1,11 +1,16 @@
 import 'dart:io';
-import 'package:flutter/cupertino.dart';
+
+import 'package:e_commerce_mart/CONFIGS/assetspath.dart';
+import 'package:e_commerce_mart/CONFIGS/colors.dart';
+import 'package:e_commerce_mart/WIDGETS/FOR_WINDOWS_SPECIFIC/windowtitlebar.dart';
+
 import 'package:flutter/foundation.dart' as foundation;
 import 'package:e_commerce_mart/CONFIGS/theme.dart';
 import 'package:e_commerce_mart/VIEWS/homepageview.dart';
 import 'package:flutter/material.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
-import 'package:flutter/widgets.dart';
+
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   if (foundation.kIsWeb) {
@@ -43,43 +48,6 @@ class MyDesktopApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        theme: lighttheme,
-        debugShowCheckedModeBanner: false,
-        title: 'COMMERCE MART',
-        home: Column(
-          children: [
-            Container(
-              color: Colors.amber,
-              width: MediaQuery.of(context).size.width,
-              height: 25,
-              child: MoveWindow(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [closebtn()],
-                ),
-              ),
-            ),
-            Expanded(child: Homepageview())
-          ],
-        ));
-  }
-}
-
-class closebtn extends StatelessWidget {
-  const closebtn({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return IconButton(
-      onPressed: () {
-        exit(0);
-      },
-      icon: Icon(
-        Icons.close,
-        size: 15,
-      ),
-    );
+    return const Windowtitlebar();
   }
 }
